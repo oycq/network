@@ -2,6 +2,12 @@ shadowsocks
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+another way
+apt-get install python-pip
+pip install shadowsocks
+sudo ssserver -p 443 -k password -m rc4-md5 --user nobody -d start
+sudo ssserver -d stop
+https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E
 
 frp-server
 https://post.smzdm.com/p/566063
