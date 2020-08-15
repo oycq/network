@@ -1,3 +1,13 @@
+ss-client
+1.$ sudo add-apt-repository ppa:hzwhuang/ss-qt5
+2.$ cd /etc/apt/sources.list.d
+3.$ sudo mv hzwhuang-ubuntu-ss-qt5-bionic.list hzwhuang-ubuntu-ss-qt5-xenial.list
+4.$ sudo vim hzwhuang-ubuntu-ss-qt5-xenial.list
+    deb http://ppa:launchpad.net/hzwhuang/ss-qt5/ubuntu xenial main
+    # deb-src http://ppa:launchpad.net/hzwhuang/ss-qt5/ubuntu xenial main
+5.$ sudo apt-get update
+6.$ sudo apt-get install shadowsocks-qt5
+
 shadowsocks
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
