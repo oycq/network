@@ -3,6 +3,8 @@ sudo apt install shadowsocks-libev
 sudo vim /etc/shadowsocks-libev/config.json
 
 sudo vim /etc/sysctl.conf
+"server":["::1", "0.0.0.0"](Taking care about firewall)
+
 #BBR configuration
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
