@@ -13,14 +13,18 @@ sysctl -p
 lsmod |grep bbr
 
 frp-server
-https://post.smzdm.com/p/566063
-wget https://raw.githubusercontent.com/MvsCode/frp-onekey/master/install-frps.sh -O ./install-frps.sh
-chmod 700 ./install-frps.sh
-./install-frps.sh install
 
-frp-client
-wget https://github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_amd64.tar.gz
+server
+[common]
+bind_port = 5443
+bind_addr = 0.0.0.0
+token = huan@SUNYUN1
+dashboard_port = 7500
+dashboard_user = oycq1997
+dashboard_pwd = 1234qwer
+~
 
+client
 [common]
 token = huan@SUNYUN1
 server_addr = 47.100.76.211
