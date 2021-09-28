@@ -15,6 +15,7 @@ lsmod |grep bbr
 frp-server
 
 server
+ ./frps -c frps.ini
 [common]
 bind_port = 5443
 bind_addr = 0.0.0.0
